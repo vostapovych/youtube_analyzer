@@ -1,0 +1,117 @@
+{
+ "n": 100,
+ "model": "gemini-3.6-flash",
+ "gemini": {
+  "accuracy": 0.62,
+  "macro_f1": 0.6144285997227175,
+  "per_class": {
+   "positive": {
+    "precision": 0.7567567567567568,
+    "recall": 0.7,
+    "f1": 0.7272727272727273,
+    "support": 40
+   },
+   "neutral": {
+    "precision": 0.5757575757575758,
+    "recall": 0.48717948717948717,
+    "f1": 0.5277777777777778,
+    "support": 39
+   },
+   "negative": {
+    "precision": 0.5,
+    "recall": 0.7142857142857143,
+    "f1": 0.5882352941176471,
+    "support": 21
+   }
+  },
+  "confusion_matrix": [
+   [
+    28,
+    8,
+    4
+   ],
+   [
+    9,
+    19,
+    11
+   ],
+   [
+    0,
+    6,
+    15
+   ]
+  ],
+  "labels": [
+   "positive",
+   "neutral",
+   "negative"
+  ]
+ },
+ "vader": {
+  "accuracy": 0.58,
+  "macro_f1": 0.49863163656267107,
+  "per_class": {
+   "positive": {
+    "precision": 0.6818181818181818,
+    "recall": 0.75,
+    "f1": 0.7142857142857143,
+    "support": 40
+   },
+   "neutral": {
+    "precision": 0.5208333333333334,
+    "recall": 0.6410256410256411,
+    "f1": 0.5747126436781609,
+    "support": 39
+   },
+   "negative": {
+    "precision": 0.375,
+    "recall": 0.14285714285714285,
+    "f1": 0.20689655172413793,
+    "support": 21
+   }
+  },
+  "confusion_matrix": [
+   [
+    30,
+    7,
+    3
+   ],
+   [
+    12,
+    25,
+    2
+   ],
+   [
+    2,
+    16,
+    3
+   ]
+  ],
+  "labels": [
+   "positive",
+   "neutral",
+   "negative"
+  ]
+ },
+ "gemini_unknown": 0,
+ "gemini_seconds": 34.2,
+ "gemini_requests": 2,
+ "gemini_tokens": 8996,
+ "per_video": {
+  "oBfpEReuB3o": {
+   "n": 45,
+   "gemini_acc": 0.6,
+   "vader_acc": 0.467
+  },
+  "pi7Ec9APt7s": {
+   "n": 45,
+   "gemini_acc": 0.578,
+   "vader_acc": 0.667
+  },
+  "w224tgfrTBY": {
+   "n": 10,
+   "gemini_acc": 0.9,
+   "vader_acc": 0.7
+  }
+ }
+}
